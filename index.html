@@ -1,0 +1,161 @@
+<!Doctype html>
+<html>
+<head>
+   <style>
+     
+     #class{
+	  background-color:yellow;
+	  }
+	  
+	 .id{
+	   background-color:red;
+	   }
+	   
+	  .id,h2{
+	    color:green;
+	  }
+	  
+	  *{
+	    padding:0;
+		margin:0;
+		}
+		
+	
+	  .dev ~ p{
+	  background-color:yellow;
+	  }
+	  
+	 
+	 a:link {
+		  color: #FF0000;
+		}
+		
+	 a:visited {
+		  color: #00FF00;
+		}
+
+     a:hover {
+		  color: #FF00FF;
+		}
+
+	 a:active {
+		  color: #0000FF;
+		}
+		
+		
+	 
+	 .letter::first-letter {
+		  color: #ff0000;
+		  font-size: xx-large;
+		}
+
+	 .line::first-line {
+		  color: #0000ff;
+		  font-variant: small-caps;
+		}
+	   
+	  .next h3::after {
+		  content:"Next Tag";
+		}
+		
+		::selection {
+		  color: red;
+		  background: yellow;
+		}
+		
+		a[target="_blank"] {
+		  background-color: yellow;
+		}
+		
+		[title~="flower"] {
+		  border: 5px solid yellow;
+		}
+
+
+	 </style>
+</head>
+<body>
+      <!--css selectors-->
+	  <!--Simple selector>
+	   <Combinator selector>
+	   <Psuedo class selectors>
+	   <psuedo element selects>
+	   <attribute selectors-->
+	  
+	  <!--simple selector-->
+	    <div id="class">
+		 <h2>Css selectors</h2>
+		 </div>
+	    <div class="id">
+		   <h2>Css selectors</h2>
+		  </div>
+		<div class="id">
+		   <h2>Css selectors</h2>
+		  </div>
+	
+      <!--combinator selector-->
+	      <!--descendant selector- .
+		     child selector- >
+			 Adject Sibling- +
+			 general sibling- ~
+			 -->
+			 
+         <div class="dev">
+		  <p>Paragraph 1 in the div.</p>
+		  <p>Paragraph 2 in the div.</p>
+		  <section>
+		  <p>Paragraph 3 in the div.</p>
+		  </section>
+		</div>
+
+		<p>Paragraph 4. Not in a div.</p>
+		<p>Paragraph 5. Not in a div.</p>
+
+        <!--psuedo.class selector-->
+           <!--link
+               visited
+               hover
+               avtive-->
+            <a href="#">Click Here</a>
+
+        <!--psuedo.element selector-->
+            <!--first-line
+                first-letter
+                before
+                after
+                marker
+                selection-->
+             <p class="line">Expedita veritats consequuntur nihil tempore laudantium vitae denat pacta</p>
+			 
+             <p class="letter">Expedita veritats</p>
+			 
+			 <div class="next">
+			   <h3> Css element</h3>
+			   <p>Expedita veritats consequuntur nihil tempore laudantium vitae denat pacta</p>
+			     
+             </div>
+			 
+             <ul>
+			  <li>Fed01</li>
+			  <li>Fed02</li>
+			  <li>Fed03</li>
+			 </ul>
+			
+             <!--Attribute selector-->
+       		The [attribute="value"] selector is used to select elements with a specified attribute and value.<br>
+			 <a href="http://www.disney.com" target="_blank">disney.com</a>
+             <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a><br>
+
+            The [attribute~="value"] selector is used to select elements 
+
+            The [attribute|="value"] selector is used to select elements 
+
+            The [attribute^="value"] selector is used to select elements 
+
+            The [attribute$="value"] selector is used to select elements 
+
+            The [attribute*="value"] selector is used to select elements
+            <img src="img/klematis.jpg" title="klematis flower" width="150" height="113">
+            <img src="img/img_flwr.gif" title="flower" width="224" height="162">			
+</body>
+</html>
